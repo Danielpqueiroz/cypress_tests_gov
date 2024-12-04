@@ -1,3 +1,5 @@
+///<reference types="cypress" />
+
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import acessibilidadePage from '../../pages/acessibilidade.page';
 
