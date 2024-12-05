@@ -1,15 +1,19 @@
 Feature: Teste de Download de Arquivo
   Testar o download de um arquivo no site do IBGE
 
-Background: Acessar a página inicial
+Background: Acessar a página Tábuas Completas de Mortalidade
   Given eu acessei a página Tábuas Completas de Mortalidade do IBGE
 
-Scenario: Teste de Download do Arquivo População.csv
-  When eu clicar no link de download do arquivo "População.csv"
-  Then o arquivo "População.csv" deve ser baixado com sucesso
-  And o conteúdo do arquivo baixado deve ser válido
+Scenario Outline: Teste de Download de Arquivo <arquivo>
+  When eu clicar no link de download do arquivo "<arquivo>"
+  Then o arquivo "<arquivo>" deve ser baixado com sucesso
+  
 
-   Examples:
-     | arquivo        |
-     | População.csv  |
-     | Censo2021.pdf  |
+  Examples:
+    | arquivo              |
+    | ambos_os_sexos.xlsx  |
+    | homens.xlsx          |
+    | mulheres.xlsx        |
+    
+    
+

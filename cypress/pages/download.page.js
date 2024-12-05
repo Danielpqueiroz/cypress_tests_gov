@@ -13,8 +13,9 @@ class DownloadPage {
     // Método para clicar no link de download
     clicarLinkDownload(arquivo) {
       // Aqui você pode procurar o link do arquivo pelo nome, como exemplo, usando "contains"
-      cy.contains(arquivo).click();
+      cy.get(`[href="https://ftp.ibge.gov.br/Tabuas_Completas_de_Mortalidade/Tabuas_Completas_de_Mortalidade_2023/xlsx/${arquivo}"] > strong`).click();
     }
+    
   
     // Método para verificar se o arquivo foi baixado
     verificarDownload(arquivo) {
