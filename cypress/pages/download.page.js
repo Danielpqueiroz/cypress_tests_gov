@@ -11,15 +11,15 @@ class DownloadPage {
     }
   
     // Método para clicar no link de download
-    clicarLinkDownload(arquivo) {
+    clicarLinkDownload(arquivo, extensao) {
       // Aqui você pode procurar o link do arquivo pelo nome, como exemplo, usando "contains"
-      cy.get(`[href="https://ftp.ibge.gov.br/Tabuas_Completas_de_Mortalidade/Tabuas_Completas_de_Mortalidade_2023/xlsx/${arquivo}"] > strong`).click();
+      cy.get(`[href="https://ftp.ibge.gov.br/Tabuas_Completas_de_Mortalidade/Tabuas_Completas_de_Mortalidade_2023/${extensao}/${arquivo}.${extensao}"] > strong`).click();
     }
     
   
     // Método para verificar se o arquivo foi baixado
-    verificarDownload(arquivo) {
-      cy.readFile(`cypress/downloads/${arquivo}`).should('exist');
+    verificarDownload(arquivo, extensao) {
+      cy.readFile(`cypress/downloads/${arquivo}.${extensao}`).should('exist');
     }
   }
   
