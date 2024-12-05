@@ -1,5 +1,5 @@
-Feature: Login test
-    Login test for the x
+Feature: Navegate test
+    Navegate test for the x
 
 Background: Open page
     Given I access the main page from IBGE
