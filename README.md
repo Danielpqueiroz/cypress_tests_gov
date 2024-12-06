@@ -1,6 +1,5 @@
 # Testes Automatizados IBGE
-## Link do vídeo da apresentação:
-- 
+## Link do vídeo da apresentação: https://www.youtube.com/watch?v=FCR8HysnTNs
 
 ## Grupo:
 - Daniel Pontes
@@ -95,3 +94,7 @@ npx cypress open
 - Tempo de carregamento da página
 - Validação de performance (<5s)
 
+
+## Nosso grupo (<3):
+## Nosso grupo (<3):
+![Nosso Grupo](https://i.ibb.co/zPd5SFk/7867d684-d996-4121-be41-2ef763fb0166.jpg)
