@@ -96,5 +96,4 @@ npx cypress open
 
 
 ## Nosso grupo (<3):
-## Nosso grupo (<3):
 ![Nosso Grupo](https://i.ibb.co/zPd5SFk/7867d684-d996-4121-be41-2ef763fb0166.jpg)
